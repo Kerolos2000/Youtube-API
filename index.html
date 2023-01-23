@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/pngtree-youtube-social-media-3d-stereo-png-image_6308427.png">
+    <title>youtube API</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+</head>
+
+<body class="custom-scrollbar" id="education">
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+
+            <div class="navbar-brand">
+                <i class="material-icons">menu</i>
+                <div class="img">
+                    <a href="index.html"><img src="img/YouTube_Logo_2017.svg.webp"></a>
+                </div>
+            </div>
+
+            <div class="med">
+                <input class="form-control" id="mainsearch" placeholder="search" type="search">
+                <button id="mainBtn"><i class="material-icons">search</i></button>
+                <div class="mic">
+                    <i class="material-icons">mic</i>
+                </div>
+            </div>
+
+            <div class="end">
+                <i class="material-icons-outlined">video_call</i>
+                <i class="material-icons-outlined">notifications</i>
+                <i class="material-icons-outlined">account_circle</i>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+
+    <section id="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 text-center left">
+                    <div class="all">
+                        <div class="iconText">
+                            <i class="material-icons-outlined">home</i>
+                            <h6>Home</h6>
+                        </div>
+                        <div class="iconText">
+                            <i class="material-icons-outlined">close_fullscreen</i>
+                            <h6>Shorts</h6>
+                        </div>
+                        <div class="iconText">
+                            <i class="material-icons-outlined">subscriptions</i>
+                            <h6>Subscriptions</h6>
+                        </div>
+                        <div class="iconText">
+                            <i class="material-icons-outlined">video_library</i>
+                            <h6>Library</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-11 text-center right">
+                    <div class="channelBanner">
+                    </div>
+                    <div class="channelInfo">
+                        <div class="card">
+                            <div class="container">
+                                <div class="leftCard">
+                                    <div class="img me-3">
+
+                                    </div>
+                                    <div class="text">
+                                        <h3></h3>
+                                        <p></p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="rightCard">
+                                    <button class="btn btn-dark my-3">subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="links ">
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">Home</div>
+                                    <div class="swiper-slide">Videos</div>
+                                    <div class="swiper-slide">Shorts</div>
+                                    <div class="swiper-slide">Live</div>
+                                    <div class="swiper-slide active">Playlists</div>
+                                    <div class="swiper-slide">Community</div>
+                                    <div class="swiper-slide">Channels</div>
+                                    <div class="swiper-slide">About</div>
+                                    <div class="swiper-slide"><i class="material-icons">search</i></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="allPlatLists">
+                            <div class="container-md containerx container-fluid">
+                                <div class="row g-3">
+                                    <div class="Btn">
+                                        <span class="text-start">All playlists <i
+                                                class="material-icons-outlined">expand_more</i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        let preview = 8;
+        if (document.body.offsetWidth < 991 && document.body.offsetWidth >= 767) {
+            preview = 6;
+        }
+        else if (document.body.offsetWidth < 767 && document.body.offsetWidth >= 576) {
+            preview = 4;
+        }
+        else if (document.body.offsetWidth < 576 && document.body.offsetWidth >= 300) {
+            preview = 3;
+        } else if (document.body.offsetWidth < 300) {
+            preview = 2;
+        }
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: preview,
+            loop: false,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- font awesome -->
+    <script src="js/all.min.js"></script>
+    <script src="js/education.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/pngtree-youtube-social-media-3d-stereo-png-image_6308427.png">
+    <title>youtube API</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+</head>
+
+<body class="custom-scrollbar" id="Videos">
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+
+            <div class="navbar-brand">
+                <i class="material-icons">menu</i>
+                <div class="img">
+                    <a href="../index.html"><img src="../img/YouTube_Logo_2017.svg.webp"></a>
+                </div>
+            </div>
+
+            <div class="med">
+                <input class="form-control" id="mainsearch" placeholder="search" type="search">
+                <button id="mainBtn"><i class="material-icons">search</i></button>
+                <div class="mic">
+                    <i class="material-icons">mic</i>
+                </div>
+            </div>
+
+            <div class="end">
+                <i class="material-icons-outlined">video_call</i>
+                <i class="material-icons-outlined">notifications</i>
+                <i class="material-icons-outlined">account_circle</i>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <section id="main">
+        <div class="container-fluid">
+            <div class="row main-container mt-2">
+                <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12 col-12" id="mainAccordion">
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12" id="mainMenu">
+                    <h3>Select Video</h3>
+                    <ul class="list-group" id="listGroup">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.js"></script>
+    <!-- font awesome -->
+    <script src="../js/all.min.js"></script>
+    <!-- main js file -->
+    <script src="../js/videos.js"></script>
+</body>
+
+</html>
